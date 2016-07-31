@@ -26,7 +26,7 @@ newdata$Voltage<-as.numeric(newdata$Voltage)
 newdata$Global_reactive_power<-as.numeric(newdata$Global_reactive_power)
 
 ## create a png file and populate it with plot 1 from the assignment 
-png(file="plot1.png")
+png(file="plot1.png",width=480,height=480)
 hist(newdata$Global_active_power,col="red",xlab="Global Active Power (kilowatts)",main="Global Active Power")
 dev.off()
 }

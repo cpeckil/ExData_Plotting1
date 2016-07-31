@@ -26,7 +26,7 @@ newdata$Voltage<-as.numeric(newdata$Voltage)
 newdata$Global_reactive_power<-as.numeric(newdata$Global_reactive_power)
 
 ## create a png file and populate it with plot 4 from the assignment 
-png(file="plot4.png")
+png(file="plot4.png",width=480,height=480)
 
 ## set up a 2x2 plot to be populated with the requested plots
 par(mfrow=c(2,2))

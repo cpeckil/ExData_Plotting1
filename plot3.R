@@ -26,7 +26,7 @@ newdata$Voltage<-as.numeric(newdata$Voltage)
 newdata$Global_reactive_power<-as.numeric(newdata$Global_reactive_power)
 
 ## create a png file and populate it with plot 3 from the assignment 
-png(file="plot3.png")
+png(file="plot3.png",width=480,height=480)
 plot(newdata$newdate,newdata$Sub_metering_1,type="l",xlab=NA,ylab="Energy sub metering")
 lines(newdata$newdate,newdata$Sub_metering_2,type="l",col="red")
 lines(newdata$newdate,newdata$Sub_metering_3,type="l",col="blue")
