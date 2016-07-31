@@ -1,3 +1,4 @@
+{
 ## load the data.table package so that the fread function can be used
 library(data.table)
 
@@ -28,3 +29,4 @@ newdata$Global_reactive_power<-as.numeric(newdata$Global_reactive_power)
 png(file="plot2.png")
 plot(newdata$newdate,newdata$Global_active_power,type="l",xlab=NA,ylab="Global Active Power (kilowatts)")
 dev.off()
+}

@@ -1,3 +1,4 @@
+{
 ## load the data.table package so that the fread function can be used
 library(data.table)
 
@@ -37,3 +38,4 @@ lines(newdata$newdate,newdata$Sub_metering_3,type="l",col="blue")
 legend("topright",c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),lty=c(1,1,1),col=c("black","red","blue"),bty="n")
 plot(newdata$newdate,newdata$Global_reactive_power,type="l",xlab="datetime",ylab="Global_reactive_power")
 dev.off()
+}
